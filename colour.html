@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping cart</title>
+    <style>
+       body{
+        font-family:Arial;
+        background:#f2f2f2;
+        margin:0;
+        padding:20px;
+        }
+        h1{
+            font-size: 40px;
+            text-align:center;
+            color:#333;
+            letter-spacing: 2px;
+        }
+
+        .container{
+            display:grid;
+            grid-template-columns:repeat(3,1fr);
+            gap:20px;
+        }
+
+        .cart{
+            background:white;
+            border:1px solid #ddd;
+            padding:15px;
+            border-radius:8px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.1);
+            text-align:center;
+        }
+
+
+        .cart img{
+            width:100%;
+            height:250px;
+            object-fit:contain;
+            border-radius:8px;
+        }
+        /* price text */
+        .price{
+            color:green;
+            font-weight:bold;
+        }
+        /* button styling */
+        button{
+            background:#007bff;
+            color:white;
+            border:none;
+            padding:10px;
+            margin-top:10px;
+            cursor:pointer;
+            border-radius:5px;
+        }
+        /* hover effect */
+     button:hover{
+        background:#0056b3;
+
+     }
+     /* flexbox example */
+     .cart-footer{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+
+     }
+     .store-header{
+background:black;
+color:white;
+padding:25px;
+text-align:center;
+font-size:45px;
+font-family:Georgia, serif;
+letter-spacing:3px;
+border-bottom:3px solid gold;
+
+}
+.product:hover{
+transform:scale(1.03);
+transition:0.3s;
+}
+
+
+        
+    </style>
+</head>
+
+<body>
+ <header class="store-header">
+Diamond Jewellery Store
+</header>
+
+
+
+
+    <h1>Shopping cart</h1>
+
+    <div class="container">
+
+        <div class="cart">
+            <img src="https://kameswarijewellers.in/wp-content/uploads/2023/04/DER18-501.jpg">
+            <h3>Diamond earring</h3>
+            <p class="price">₹5,00,000</p>
+
+            <div class="cart-footer">
+                <span>In stock</span>
+                <button>Add</button>
+            </div>
+        </div>
+
+
+    <div class="cart">
+        <img src="https://truediamond.in/cdn/shop/files/Solitaire_98.png?v=1767876365">
+        <h3>Diamond ring</h3>
+        <p class="price"> ₹4,30,000</p>
+
+          <div class="cart-footer">
+                <span>In stock</span>
+                <button>Add</button>
+            </div>
+    </div>
+
+    <div class="cart">
+        <img src="https://d25g9z9s77rn4i.cloudfront.net/uploads/product/1612/1737205084_72879403b5afb9423237.jpg">
+        <h3>Diamond necklace</h3>
+        <p class="price"> ₹7,30,000</p>
+
+          <div class="cart-footer">
+                <span>In stock</span>
+                <button>Add</button>
+            </div>
+    </div>
+</div>
+    
+</body>
+</html>
